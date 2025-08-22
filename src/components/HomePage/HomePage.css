@@ -9,7 +9,7 @@
 }
 .home-container::before{
     content: " ";
-    background-image: url("./home.jpg");
+    background-image: url("./hero.png");
     height: 100%;
     width: 100vw;
     position: absolute;
