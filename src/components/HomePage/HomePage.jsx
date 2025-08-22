@@ -36,7 +36,7 @@ const Home = (props) => {
               <p>I'm a</p>
               <div className="homeSkillSubs">
                 <span>ReactJs Developer.</span>
-                <span>Full Stack Developer.</span>
+                <span>MERN Stack Developer.</span>
                 <span>Salesforce Developer.</span>
                 <span>Software Engineer.</span>
               </div>{" "}
