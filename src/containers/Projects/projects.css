@@ -1,0 +1,96 @@
+.projects-container{
+    padding: 5% 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* justify-content: center; */
+    background:inherit;
+    z-index: 100;
+    overflow: hidden;
+}
+.project-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap:5%
+}
+.projectcard{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    text-align: left;
+    gap:5%;
+    /* border: 2px solid; */
+    position: relative;
+}
+.project-content{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    position:relative;
+    top:-100px
+}
+.project-image{
+    /* width: 65%; */
+    /* border: 2px solid; */
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project-image > img{
+    /* height: 100%; */
+    width: 100%;
+    align-items: center;
+    border-radius: 30px;
+    border: 2px solid white;
+}
+.reverse{
+    flex-direction: row-reverse;
+}
+.project-image>img:hover{
+    /* opacity: 0.8; */
+    border-color: red;
+}
+/* .project-image::before{
+    content: " Go to Website 🔗";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+} */
+
+@media screen and (max-width:1080px) {
+    .projects-container{
+        padding: 5%;
+        content: "Go to website 🔗";
+    }
+    .projectcard{
+        flex-direction: column;
+        padding-bottom: 30px;
+        border-bottom: 3px dashed;
+        border-radius: 30px;
+    }
+
+    .project-wrap{
+        gap: 100px;
+    }
+    .reverse{
+        flex: none;
+    }
+    .project-image{
+        width: 100%;
+    }
+    .project-content{
+        width: 100%;
+        position: static;
+    }
+    .project-image > img{
+        height: 50%;
+    }
+}

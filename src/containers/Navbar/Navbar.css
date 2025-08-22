@@ -1,0 +1,116 @@
+.navbar-container{
+    padding: 0%  5%;
+    width: 90%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    z-index: 1000;
+    /* gap:25%; */
+    background-color: transparent;
+    /* position: fixed; */
+    justify-content: space-between;
+}
+.navbar-container::after{
+    content: " ";
+    /* background-image: url(../../components/HomePage/hero.png); */
+    background-color: red;
+    position: fixed;
+}
+.navbar-elements{
+    display: flex;
+    align-items: center;
+    gap: 9%;
+    justify-content: space-between;
+    font-weight: 900;
+}
+.navbar-elements .navbar-el{
+    user-select: none;
+}
+.navbar-elements .navbar-el:hover{
+    color:red;
+    font-weight: 600;
+    cursor: pointer;
+}
+/* .navbar-elements a:visited{
+    color:red;
+    font-weight: 600;
+} */
+.wesite-color-change{
+    cursor:pointer;
+    user-select: none;
+}
+.wesite-color-change img{
+    height: 24px;
+    width: 24px;
+    user-select: none;
+}
+/* .navelcontainer{
+    position: fixed;
+    right: 1%;
+    z-index: 10000;
+    margin: 5% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 600;
+    height: 80%;
+} */
+/* .navelcontainer{
+    display: flex;
+} */
+.navbar-title{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px
+}
+.navbar-toggle-menu-container{
+    padding: 30px 0;
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    right:2%;
+    align-items: center;
+    background-color: #eeeeeec0;
+    width: 100%;
+    cursor: pointer;
+    backdrop-filter: blur(3px);
+}
+.navbar-toggle-menu{
+    display: none;
+}
+.navbar-toggle-menu-container.dark{
+    background-color: #252525c0;
+    backdrop-filter: blur(3px);
+}
+.navbar-el a{
+    text-decoration: none;
+    color: inherit;
+}
+.shadow{
+    box-shadow: 0 10px black;
+}
+/* 
+.verticalline{
+    height:70px;
+    width: 5px;
+    background-color: red;
+    border-radius: 30px;
+} */
+@media screen and (max-width:1080px) {
+    .navbar-elements{
+        display: none;
+    }
+    .navbar-toggle-menu{
+        display: block;
+    }
+    .navbar-el:hover{
+        color:red;
+        font-weight: 600;
+        cursor: pointer;
+    }
+}

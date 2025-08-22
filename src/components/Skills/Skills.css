@@ -1,0 +1,92 @@
+.skill-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* padding:0 10%; */
+    /* height: 100vh; */
+    /* z-index: 1000; */
+}
+/* .skill-container::after{
+    content: " ";
+    background-image:url("../HomePage/hero.png") ;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.4;
+    z-index: -5;
+    display: flex;
+    background-position: 50%;
+    /* filter:brightness(3.0) contrast(1.8); */
+/* } */
+
+.sicon{
+    height: 80px;
+    width: 80px;
+}
+.skill-image-container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(auto,1fr);
+    column-gap: 80px;
+    row-gap: 40px;
+}
+.skill-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 0 5%;
+}
+.light{
+    background-image: none;
+}
+.skill-image-container .dark{
+    filter: invert(100);
+}
+.skill-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.skill-main p{
+    font-weight: 600;
+}
+
+@media screen and (max-width:1080px) {
+    .skill-image-container{
+        grid-template-columns: repeat(4,1fr);
+    }
+    /* .img{
+        height: 70px;
+        width: 70px;
+    } */
+
+}
+@media screen and (max-width:800px) {
+    .skill-image-container{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media screen and (max-width:640px) {
+    .skill-container{
+        padding-top: 100px;
+        height: auto;
+    }
+    .skill-image-container{
+        grid-template-columns: repeat(3,1fr);
+    }
+        .sicon{
+        height: 40px;
+        width: 40px;
+    }
+    .skill-image-container{
+        column-gap: 30px;
+        row-gap: 15px;
+    }
+}
+

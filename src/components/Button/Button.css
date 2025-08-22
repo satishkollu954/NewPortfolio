@@ -1,0 +1,17 @@
+button{
+    font-size: 16px;
+    border: solid 2px #EF383A;
+    border-radius: 3px;
+    color: #EF383A;
+    padding:5px 20px;
+    margin-top: 10%;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: ease-in 0.2s;
+    user-select: none;
+}
+button:hover{
+    border: solid 2px #EF383A;
+    box-shadow: -2px -2px #EF383A;
+    cursor: pointer;
+}

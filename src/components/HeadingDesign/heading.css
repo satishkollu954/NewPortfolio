@@ -1,0 +1,21 @@
+.underElement::after{
+    position: absolute;
+    content: " ";
+    height: 4px;
+    width: 75px;
+    background-color: red;
+    border-radius: 360px;
+    z-index: -1px;
+}
+.underElement{
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 60px;
+}
+.cont{
+    width: auto;
+    display: flex;
+    padding: 0 5%;
+}

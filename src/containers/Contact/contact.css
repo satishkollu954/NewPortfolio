@@ -1,0 +1,160 @@
+.contact-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    margin-top: 2%;
+    overflow: hidden;
+    height: 100vh;
+}
+.contact-container{
+        margin: 0% 10%;
+        overflow: hidden;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        flex: 8;
+}
+.contact-wrap::before{
+    content: " ";
+    background:url("../../components/HomePage/hero.png") ;
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -5;
+    overflow: hidden;
+}
+.aboutC{
+    width: 80%;
+}
+.cg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact-content{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+    gap: 75px;
+    align-self: center;
+}
+.contact-greet{
+    font-size: 94px;
+    font-weight: 900;
+}
+input{
+    border: none;
+    border-bottom: 3px solid red;
+    background-color: inherit;
+    outline: none;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: inherit;
+    padding: 5px;
+    width: 100%;
+}
+input::placeholder{
+    font-family: inherit;
+    font-size: 14px;
+    /* color: rgb(201, 200, 200); */
+}
+form{
+    display: flex;
+    align-items: baseline;
+    gap: 50px;
+    /* padding-bottom: 100px; */
+}
+form button{
+    margin-top:10px ;
+    width: 150px;
+}
+.icon{
+    height: 20px;
+    width: 20px;
+}
+.icon:hover{
+    height: 24px;
+    width: 24px;
+    color: inherit;
+}
+.si{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+
+}
+.sn{
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+}
+.foo-social{
+    /* padding: 0 20% ; */
+    padding-top: 50px ;
+    height: 100px;
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 14px;
+    flex: 1;
+    /* box-shadow: -2px 0 20px rgba(255, 0, 0, 0.1); */
+    /* z-index: 100; */
+}
+.contact-greet-sub{
+    font-size: 12px;
+}
+/* .contact-footer{
+    background-color: #252525;
+} */
+a{
+    text-decoration: none;
+    color: inherit;
+}
+@media screen and (max-width:1080px){
+        
+    .contact-container{
+        margin: 2% 10%
+    }
+}
+@media screen and (max-width:640px){
+    .contact-greet{
+        font-size: 54px;
+    }
+    form{
+        flex-direction: column;
+        /* padding-bottom: 50px; */
+        align-items: center;
+        gap: 10px;
+    }
+    .foo-social{
+        padding: 0;
+        /* padding-top: 30px */
+         ;}
+    .contact-wrap{
+        /* padding-top:30px ; */
+    }
+    .si{
+        justify-content: space-evenly;
+        width: 50%;
+    }
+    .sn{
+        width: 50%;
+    }
+    .contact-wrap::after{
+        background-position: -400px 50px;
+    }
+    
+}

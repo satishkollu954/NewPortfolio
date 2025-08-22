@@ -1,0 +1,166 @@
+.home-container{
+    display: flex;
+    text-align: start;
+    /* height: 100vh; */
+    z-index: 100;
+    background: none;
+    align-items: center;
+    /* background-color: rgb(196, 214, 57); */
+}
+.home-container::before{
+    content: " ";
+    background-image: url("./hero.png");
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -5;
+    /* background-color: green */
+    /* background-position-y: -200px; */
+}
+.light{
+    background: #eeeeee;
+}
+.homeSkill{
+    display: flex;
+    gap:10px;
+    height:33px;
+    overflow: hidden;
+    font-size: 22px;
+}
+.homeSkillSubs{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    animation: cycle 10s ease infinite;
+    /* background-color: #EF383A; */
+
+}
+.home-content{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    text-align: start;
+    padding: 0 10%;
+}
+.home-wrap{
+    width: 100%;
+    margin-top: 10%;
+}
+.img-wrap{
+    height: 100px;
+    width: 100px;
+    background-color:#252525;
+    align-self: center;
+    /* margin-left: 200px; */
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-left-radius: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+}
+
+
+.home-content h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 68px;
+    letter-spacing: 2.5px;
+
+}
+.home-content span{
+    color:#EF383A;
+}
+.home-content .greet{
+    font-weight: 900;
+    user-select: none;
+}
+
+img{
+    height: 500px;
+    width: 500px;
+    margin-top: 30%;
+
+}
+
+
+/* .placeHolder{
+    margin: 10% 0 0 10%;
+    height: 400px;
+    width: 200px;
+    background-color: #EF383A;
+    border-top-left-radius: 180px;
+    border-bottom-right-radius: 180px;
+    border-top-right-radius: 180px;
+    border-bottom-left-radius: 180px;
+} */
+
+/* .inPlaceHolder{
+    height: 350px;
+    width: 350px;
+    background-color: #EF383A;
+    border-top-left-radius: 160px;
+    border-top-right-radius: 160px;
+}
+.secPlaceHolder{
+    height: 400px;
+    width: 300px;
+    background-color: #EF383A;
+    border-top-left-radius: 160px;
+    border-top-right-radius: 160px;
+
+} */
+
+
+@keyframes cycle {
+    0%{top:0%}
+    5%{top:0%}
+    10%{top: -100%}
+    15%{top:-100%}
+    20%{top:-100%}
+    25%{top:-100%}
+    30%{top:-100%}
+    35%{top:-200%}
+    40%{top:-200%}
+    45%{top:-200%}
+    50%{top:-200%}
+    55%{top:-200%}
+    60%{top:-300%}
+    65%{top:-300%}
+    70%{top:-300%}
+    75%{top:-300%}
+    80%{top:-300%}
+    85%{top:-0%}
+    90%{top:0%}
+    95%{top:0%}
+    100%{top:0%}
+}
+@media screen and (max-width:1080px) {
+    .img-wrap{
+        display: none;
+    }
+    .home-wrap{
+        width: 90%;
+        /* margin-top: 20%; */
+    }
+    .home-container::before{
+        background-position: 0px;
+    }
+    .home-container{
+        padding-bottom: 10%;
+    }
+    .homeSkill{
+        height:24px;
+        font-size: 16px;
+    }
+    .home-container::before{
+        background-position: -400px -60px;
+    }
+}
+@media screen and (max-width:640px) {
+
+}
