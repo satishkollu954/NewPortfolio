@@ -40,7 +40,7 @@ const Projects = () => {
           align="reverse"
           tech="MERN, and a lot 🙂"
           img={ecommerce}
-          url={"https://satishkollu.vercel.app"}
+          url={"https://fitfusionsa.vercel.app/"}
         />
         <Card
           num="2"
